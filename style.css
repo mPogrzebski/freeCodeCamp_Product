@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #fefae0;
+}
+
+.wrapper {
+  text-align: center;
+  position: relative;
+}
+
+#header {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  top: 0;
+  width: 100%;
+  background-color: white;
+}
+
+#header a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 3vh;
+  color: #000;
+}
+
+#header ul {
+  width: 30vw;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row;
+}
+
+#header li {
+  list-style: none;
+}
+
+#header-img {
+  width: 5vw;
+}
+
+.overview {
+  margin-top: 120px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 120px;
+}
+
+.overview img {
+  max-width: 100%;
+  height: auto;
+}
+
+#spec {
+  padding: 20px;
+}
+
+#spec ul {
+  font-size: 2vh;
+  width: 40%;
+  margin: auto;
+  line-height: normal;
+  line-height: 2;
+  text-align: left;
+}
+
+footer {
+  background-color: white;
+  margin: auto;
+  padding: 20px;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+
+@media (max-width: 600px) {
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  #header {
+    position: relative;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #header ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+}
